@@ -89,7 +89,7 @@
     "objection": "^1.6.9",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
-    "sequelize": "^5.16.0",
+    "sequelize": "^5.18.4",
     "serve-favicon": "^2.5.0",
     "sqlite3": "^4.1.0",
     "tslint": "^5.19.0",
