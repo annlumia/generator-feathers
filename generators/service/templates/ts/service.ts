@@ -13,7 +13,11 @@ declare module '<%= relativeRoot %>declarations' {
 }
 
 export default function (app: Application) {
-  <% if (modelName) { %>const Model = createModel(app);<% } %>
+  <% if (modelName) { %>
+  const Model = createModel(app);
+  app.set('models/<%= modelName.replace(".model", "") %>', Model);
+  <% } %>
+
   const paginate = app.get('paginate');
 
   const options = {<% if (modelName) { %>
